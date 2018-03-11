@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Documentação Cerne</title>
+    <link href="../assets/lib/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../assets/lib/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../assets/lib/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <h1>Documentação Cerne <small>versão 2.0.0</small></h1>
+		
+		
+		<h2>Considerações Iniciais</h2>
+		<p>O presente documento tem o objetivo de apresentar os conceitos arquiteturais que compõem o Cerne, bem como as formas de utilizá-lo.</p>
+		<p>A primeira consideração a ser feita é quanto ao controle de versão utilizado, Versionamento Semântico. O Cerne atual se encontra na versão 2.0.0. Estes três números representam o padrão MAJOR.MINOR.PATCH. A mudança em cada um desses números é feita de acordo com a descrição abaixo:</p>
+         <ul>
+        	<li>versão Maior(MAJOR): quando fizer mudanças incompatíveis na API,</li>
+            <li>versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade, e</li>
+            <li>versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.</li>
+        </ul>
+		<p>Mais sobre isso pode ser visto em <a href="http://semver.org/lang/pt-BR/">Versionamento Semântico 2.0.0.</a></p>		
+		
+        <h2>Estrutura Básica de Arquivos</h2>
+		<p>O Cerne é composto pelos seguintes arquivos:</p>
+		<ul>
+        	<li>assets</li>
+			<li>documentacao</li>
+			<li>elementos</li>
+        </ul>
+		
+		
+		<h2>Assets</h2>
+		<p>A primeira pasta assets contém recursos ligados aos componentes visuais do cerne. Portanto tem algumas subpastas como:</p>
+        <ul>
+            <li>css, que contém css do cerne e seus elementos</li>
+            <li>lib, que contém as bibliotecas utilizadas</li>
+        </ul>
+		<p>Várias bibliotecas são utilizadas no cerne, como:</p>
+		<ul>
+        	<li>Bootstrap v3.3.6</li>
+            <li>JQuery v2.1.4</li>
+            <li>JQueryUI v1.12.0</li>
+			<li>Plotly v1.16.2</li>
+            <li>TagsInput v0.8.0</li>
+            <li>Typeahead v0.11.1</li>
+			<li>FreeAspUpload</li>
+        </ul>
+		<p>Dentre elas as mais importantes são as dependências do Cerne, Jquery e o Bootstrap. As demais podem ser utilizadas conforme for necessário.</p>
+		
+		
+		<h2>Elementos</h2>
+		<p>O objetivo dos arquivos dessa pasta é formar e disponibilizar um conjunto de elementos visuais que podem ser utilizados em diferentes contextos. Os elementos são estruturas html que são retornadas através de comandos ASP. Dessa forma, a camada de elementos encapsula o uso de html e javascript e diminui a necessidade de conhecimento nestas duas tecnologias.</p>
+		<p>Os elementos são genéricos, podendo ser utilizados de diferentes formas. As classes retornam os htmls através do método criar(). Portanto, é responsabilidade das funções que usam essas classes saber o momento, ordem e lugar mais apropriado para inserir o conteúdo html retornado.</p>
+		<p>OBS: também pode ser usado o método exibir em casos onde o resultado é exibido na tela e não retornado como uma string que representa um html.</p>
+		<p>É fortemente recomendado que os elementos criados utilizem a classe <a href="atributosHtml.asp">cAtributosHtml</a> quando for necessário adicionar atributos html como id, class, type etc.</p>
+		<p>Ao criar os elementos também é importante notar os padrões adotados, como o método criar, explicado anteriormente e o parâmetro valorPadrao. Pois materá a consistência dos elementos.</p>
+		<p>Os elementos presentes no Cerne estão listados abaixo. Para maiores detalhes da suas implementações e especificações, basta clicar nos links.</p>
+		<ul>
+			<li><a href="textarea.asp">Área de texto</a></li>
+            <li><a href="barraProgresso.asp">Barra de progresso</a></li>
+			<li><a href="botao.asp">Botão</a></li>
+			<li><a href="cabecalho.asp">Cabeçalho de Aplicações</a></li>
+			<li><a href="datepicker.asp">Calendário (Datepicker)</a></li>
+			<li><a href="checkbox.asp">Checkbox</a></li>
+			<li><a href="combo.asp">Combo</a></li>
+			<li><a href="container.asp">Container</a></li>
+			<li><a href="editorTexto.asp">Editor de Texto</a></li>
+        	<li><a href="tagsInput.asp">Etiqueta (Tagsinput)</a></li>
+			<li><a href="filtro.asp">Filtro</a></li>
+            <li><a href="formulario.asp">Formulário</a></li>
+        	<li><a href="grafico.asp">Gráfico</a></li>
+			<li><a href="input.asp">Input</a></li>
+        	<li><a href="modal.asp">Janela (Modal)</a></li>
+			<li><a href="modalConfirmacao.asp">Janela de confirmação</a></li>
+			<li><a href="modalErro.asp">Janela de erro</a></li>
+			<li><a href="erro.asp">Mensagem de erro</a></li>
+			<li><a href="pagina.asp">Pagina</a></li>
+			<li><a href="paginacao.asp">Paginação</a></li>
+			<li><a href="painel.asp">Painel</a></li>
+			<li><a href="radio.asp">Radio</a></li>
+			<li><a href="tabela.asp">Tabela</a></li>
+        </ul>
+		
+	</div>
+</body>
+</html>

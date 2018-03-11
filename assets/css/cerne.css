@@ -1,0 +1,157 @@
+.cabecalho {
+	border-bottom: solid 2px #1c94dc;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px
+}
+.cabecalho-descricao {
+	font-weight: bold;
+	font-size: 26px;
+	color: #0678c1;
+	text-align: center;
+	padding: 4px;
+	font-family: Andelene Mono, Trebutech, arial, verdana, sans-serif;
+}
+.cabecalho-usuario {
+	font-size: 15px;
+}
+.cabecalho-subtitulo {
+	font-size: 12px;
+}
+
+table{
+	font-size: 12px;
+}
+
+.subMenu{
+    padding: 29px 1px 3px 1px;
+}
+.subMenu>li>a {
+    padding: 4px;
+}
+.form-horizontal.col-md-12{
+	margin-top: 10px;
+}
+
+
+.crud .acoes{
+	display: inline-flex;
+}
+.crud-acoes-genericas {
+	float: right;
+}
+
+
+.informacao-graficos > div{
+	display: inline-block;
+    margin-right: 15px;
+	vertical-align: text-top;
+}
+
+.required{
+	color:red;
+}
+
+/* para deixar "traces" não "clicáveis"
+/* tira elemento que está com o evento de clique da tela */
+.js-plotly-plot .legend .traces .legendtoggle {
+   display: none;
+}
+/* tira o botão característico do clique dos tracers */
+.js-plotly-plot .legend .traces .legendtext {
+   cursor: default;
+}
+
+
+.bootstrap-tagsinput .tt-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    cursor: pointer;
+}
+
+	.tt-menu .tt-suggestion {
+		display: block;
+		padding: 3px 20px;
+		clear: both;
+		font-weight: normal;
+		line-height: 1.428571429;
+		color: #333333;
+		white-space: nowrap; 
+	}
+	.tt-suggestion:hover, 
+	.tt-suggestion:focus {
+		color: #ffffff;
+		text-decoration: none;
+		outline: 0;
+		background-color: #428bca;
+	}
+
+.tags-estaticas .bootstrap-tagsinput {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+	font-size: 17px;
+}
+	/*retirando opção de adicinar tag pelo html/javascript tag*/
+	.tags-estaticas .bootstrap-tagsinput input{
+		display: none;
+	}
+	/*retirando opção de remover tag*/
+	.tags-estaticas .bootstrap-tagsinput .tag span{
+		display: none;
+	}
+	
+
+.filtro{
+	display: -webkit-inline-box;
+}
+	.filtro .modal-body .botoes-filtro-modal{
+		float: right;
+	}
+
+.elemento-modal .modal-body{
+	    display: -webkit-box;
+}
+
+.periodo{
+	font-size: 15px;
+	display: -webkit-box;
+    max-width: 135px;
+}
+	.periodo .legenda{
+		padding: 5px;
+	}
+
+.titulo-pagina {
+    background-color: #f5f5f5;
+    margin-top: 0px;
+}	
+
+.acoes-tabela .btn{
+	margin-right: 5px;
+}
+
+.painel-botoes-acao{
+	float: right;
+}
+
+	.painel-botoes-acao .glyphicon {
+		top: 2px;
+	}
